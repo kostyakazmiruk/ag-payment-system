@@ -26,6 +26,8 @@ This is my Event-Driven project to showcase my capabilities and knowledge for CQ
 
 [Payment Microservice](https://github.com/kostyakazmiruk/ps-payment-system)
 
+https://www.loom.com/share/1ca031de2ed44ac3bbcd527c26c106b7?sid=09201e33-bc5f-4e93-9fd4-d8739af356e5
+
 ## Project setup
 
 ```bash
