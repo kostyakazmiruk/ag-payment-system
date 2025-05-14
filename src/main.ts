@@ -18,7 +18,7 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       transform: true,
-      forbidNonWhitelisted: true,
+      forbidNonWhitelisted: false,
     }),
   );
 
@@ -27,7 +27,6 @@ async function bootstrap() {
     .setTitle('Payment System API')
     .setDescription('The Payment System API documentation')
     .setVersion('1.0')
-    .addTag('payments')
     .addBearerAuth()
     .build();
 

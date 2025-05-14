@@ -1,19 +1,7 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import {
-  ApiTags,
-  ApiOperation,
-  ApiResponse,
-  ApiProperty,
-} from '@nestjs/swagger';
-
-class LoginDto {
-  @ApiProperty({ example: 'user@example.com' })
-  email: string;
-
-  @ApiProperty({ example: 'password123' })
-  password: string;
-}
+import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { LoginDto } from './dto/login.dto';
 
 @ApiTags('auth')
 @Controller('auth')
@@ -33,6 +21,7 @@ export class AuthController {
   })
   @Post('login')
   async login(@Body() loginDto: LoginDto) {
+    console.log('logindto', loginDto);
     // In a real app, you'd validate credentials
     // This is just for testing
 

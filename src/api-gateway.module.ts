@@ -7,6 +7,7 @@ import { PaymentMethodController } from './controllers/payment-method.controller
 import { ProxyService } from './services/proxy.service';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { ResponseInterceptor } from './utils/response.interceptor';
+import { AuthController } from './controllers/auth.controller';
 
 @Module({
   imports: [
